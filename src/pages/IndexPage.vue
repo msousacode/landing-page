@@ -15,7 +15,7 @@
 
       <div class="q-mt-md"></div>
 
-      <q-btn color="secondary" label="Fale conosco no WhatsApp" size="16px" no-caps />
+      <btn color="secondary" label="Fale conosco no WhatsApp" size="16px" no-caps></btn>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4 q-pa-md">
       <img
@@ -31,7 +31,7 @@
   <div class="row justify-center items-center">
     <div class="col-xs-12 col-sm-6 col-md-4 q-pa-md">
       <img
-        src="https://assini.com.br/wp-content/uploads/2024/01/section-1.png"
+        src="https://assini.com.br/wp-content/uploads/2024/01/section-4.png"
         alt="Landing Page Image"
         style="max-width: 500px; width: 100%; height: auto"
       />
@@ -64,79 +64,33 @@
 
       <div class="q-mt-md"></div>
 
-      <q-btn color="secondary" label="Fale conosco no WhatsApp" size="16px" no-caps />
+      <btn color="secondary" label="Fale conosco no WhatsApp" size="16px" no-caps></btn>
     </div>
 
     <div class="col-xs-12 col-sm-6 col-md-4 q-pa-md q-mt-xl">
       <q-list bordered class="rounded-borders">
-        <q-expansion-item
-          expand-separator
-          label="O que é a Assini e como ela pode ajudar minha empresa?"
-          class="text-h6"
-        >
-          <q-card>
-            <q-card-section class="text-body1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit
-              eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores
-              architecto suscipit iste eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
+        <card-section label="O que é a Assini e como ela pode ajudar minha empresa?"></card-section>
 
-        <q-expansion-item
-          expand-separator
+        <card-section
           label="A assinatura eletrônica da Assini tem validade jurídica?"
-          class="text-h6"
-        >
-          <q-card>
-            <q-card-section>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit
-              eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores
-              architecto suscipit iste eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
+        ></card-section>
 
-        <q-expansion-item
-          expand-separator
+        <card-section
           label="Quais tipos de modelos de Assinatura Eletrônica disponíveis na Assini?"
-          class="text-h6"
-        >
-          <q-card>
-            <q-card-section>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit
-              eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores
-              architecto suscipit iste eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
+        ></card-section>
 
-        <q-expansion-item
+        <card-section
           label="É necessário instalar algum software para criar assinatura eletrônica na Assini?"
-          class="text-h6"
-        >
-          <q-card>
-            <q-card-section>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit
-              eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores
-              architecto suscipit iste eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
-        <q-expansion-item
+        ></card-section>
+
+        <card-section
           label="Posso cancelar minha assinatura eletrônica da Assini a qualquer momento?"
-          class="text-h6"
-        >
-          <q-card>
-            <q-card-section>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit
-              eos corrupti commodi magni quaerat ex numquam, dolorum officiis modi facere maiores
-              architecto suscipit iste eveniet doloribus ullam aliquid.
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
+        ></card-section>
       </q-list>
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import btn from '../components/ButtonComponent.vue';
+import cardSection from '../components/CardSectionComponent.vue';
+</script>
